@@ -6,7 +6,7 @@ import java.io.IOException;
 import java.util.*;
 import java.util.stream.Collectors;
 
-public class SortOilCompaniesWithOOP {
+public class SortOilCompaniesTwo {
 
 	public static void main(String[] args) throws IOException {
 
