@@ -43,8 +43,13 @@ public class SortOilCompaniesTwo {
 		}
 
 		stationList = stationList.stream().filter(x -> x.getOilMark().size() == 3).collect(Collectors.toList());
-		Collections.sort(stationList);
-		stationList.forEach(x -> System.out.println(x.getAddress() + " " + x.getCompany()));
+
+		if (stationList.isEmpty()) {
+			System.out.println("Нет");
+		} else {
+			Collections.sort(stationList);
+			stationList.forEach(x -> System.out.println(x.getAddress() + " " + x.getCompany()));
+		}
 
 	}
 
